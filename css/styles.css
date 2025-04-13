@@ -1,0 +1,242 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* Navigation Bar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    background-color: lightskyblue;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+    transform: scale(1.1);
+}
+
+nav a:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    flex: 1;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+main img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Contact Form Styles */
+#contactForm {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button[type="submit"] {
+    background-color: lightskyblue;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #87CEEB;
+    transform: scale(1.05);
+}
+
+button[type="submit"]:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: lightskyblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #87CEEB;
+}
+
+/* Footer Styling */
+footer {
+    background-color: lightskyblue;
+    color: black;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    .cta-button {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px 16px;
+    }
+}
